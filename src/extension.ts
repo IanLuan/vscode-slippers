@@ -1,10 +1,10 @@
-import { ExtensionContext } from 'vscode';
+import { ExtensionContext, languages } from 'vscode';
+import { ComponentPathProvider } from './providers/definitionProvider';
 
-// This method is called when your extension is activated
-// Your extension is activated the very first time the command is executed
+
 export function activate(context: ExtensionContext) {
-	
+	const definitions = new ComponentPathProvider;
+	context.subscriptions.push(languages.registerDefinitionProvider('django-html', definitions));
 }
 
-// This method is called when your extension is deactivated
 export function deactivate() {}
