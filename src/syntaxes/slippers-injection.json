@@ -1,0 +1,19 @@
+{
+  "scopeName": "slippers.injection",
+  "injectionSelector": "L:text.html.django",
+  "patterns": [
+    {
+      "begin": "({%)\\s*((#|/)[a-zA-Z0-9_.]+)",
+      "end": "(%})",
+      "name": "storage.type.customtemplatetag.django",
+      "captures": {
+        "1": {
+          "name": "entity.tag.tagbraces.django"
+        },
+        "2": {
+          "name": "constant.slipperscomponent"
+        }
+      }
+    }
+  ]
+}
