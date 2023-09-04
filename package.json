@@ -2,9 +2,10 @@
   "name": "slippers",
   "displayName": "Slippers",
   "description": "Syntax highlight and snippets for Slippers",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "IanLuan",
   "license": "MIT",
+  "icon": "images/vscode-slippers-icon.png",
   "galleryBanner": {
     "color": "#0d1117",
     "theme": "dark"
@@ -77,5 +78,6 @@
   },
   "dependencies": {
     "js-yaml": "^4.1.0"
-  }
+  },
+  "extensionDependencies": ["batisteo.vscode-django"]
 }
