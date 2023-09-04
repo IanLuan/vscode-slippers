@@ -1,14 +1,32 @@
 {
   "name": "slippers",
   "displayName": "Slippers",
-  "description": "The extension for slippers",
+  "description": "Syntax highlight and snippets for Slippers",
   "version": "0.0.1",
+  "publisher": "IanLuan",
+  "license": "MIT",
+  "galleryBanner": {
+    "color": "#0d1117",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.81.0"
   },
   "categories": [
-    "Other"
+    "Programming Languages",
+    "Snippets"
   ],
+  "keywords": [
+    "python",
+    "django",
+    "slippers",
+    "highlight"
+  ],
+  "homepage": "https://github.com/IanLuan/vscode-slippers",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IanLuan/vscode-slippers"
+  },
   "activationEvents": [
     "onLanguage:django-html"
   ],
