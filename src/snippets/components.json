@@ -1,0 +1,29 @@
+{
+  "_comment" : "This section is autocomplete for Slippers Components",
+
+  "Slippers Block Component": {
+    "description": "{% #component %}",
+    "prefix": "s#",
+    "body": [
+      "{% #${1:component} ${2} %}",
+      "\t${3}",
+      "{% /${1:component} %}"
+    ]
+  },
+
+  "Slippers Inline Component": {
+    "description": "{% component %}",
+    "prefix": "si",
+    "body": ["{% ${1:component} ${2} %}"]
+  },
+
+  "Slippers Child": {
+    "description": "{% child %}",
+    "prefix": "child",
+    "body": [
+      "{% child ${1} %}",
+      "\t${2}",
+      "{% endchild %}"
+    ]
+  }
+}

@@ -1,9 +1,9 @@
 import { ExtensionContext, languages } from 'vscode';
-import { ComponentPathProvider } from './providers/definitionProvider';
+import { ComponentDefinitionProvider } from './providers/definitionProvider';
 
 
 export function activate(context: ExtensionContext) {
-	const definitions = new ComponentPathProvider;
+	const definitions = new ComponentDefinitionProvider;
 	context.subscriptions.push(languages.registerDefinitionProvider('django-html', definitions));
 }
 

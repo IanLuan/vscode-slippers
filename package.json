@@ -28,6 +28,12 @@
         "language": "django-html",
         "scheme": "file"
       }
+    ],
+    "snippets": [
+      {
+        "language": "django-html",
+        "path": "./src/snippets/components.json"
+      }
     ]
   },
   "scripts": {
