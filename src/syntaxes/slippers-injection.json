@@ -6,6 +6,42 @@
       "begin": "({%)\\s*((#|/)[a-zA-Z0-9_.]+)",
       "end": "(%})",
       "name": "storage.type.customtemplatetag.django",
+      "patterns": [
+        {
+          "match": "[a-zA-Z0-9_]+",
+          "name": "string.unquoted.tag-string.django"
+        },
+        {
+          "begin": "\"",
+          "end": "\"",
+          "name": "string.quoted.double.html",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.begin.html"
+            }
+          },
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.end.html"
+            }
+          }
+        },
+        {
+          "begin": "'",
+          "end": "'",
+          "name": "string.quoted.single.html",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.begin.html"
+            }
+          },
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.string.end.html"
+            }
+          }
+        }
+      ],
       "captures": {
         "1": {
           "name": "entity.tag.tagbraces.django"
